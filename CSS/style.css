@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: hsl(43, 40%, 49%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #573615;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_side
+{
+ position: relative;
+ background: #003147;
+ padding: 17.35px;
+}
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profileText .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2
+{
+    color:goldenrod;
+    font-size: 1em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em; 
+}
+.profileText h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactO
+{
+    padding-top: 35px;
+}
+.contactO ul
+{
+    position:relative;
+}
+.contactO ul li 
+{
+    list-style: none;
+    position: relative;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.contactO ul li .icon{
+    display: inline-block;
+    width: 30px;
+    color: goldenrod;
+
+}
+
+.contactO ul li span 
+{
+    color: goldenrod;
+    font-weight: 200;
+    text-align: center; 
+}
+.contactO a
+{
+    text-decoration: none;
+}
+.SCHOOL
+{
+    padding-top: 35px;
+}
+.SCHOOL ul
+{
+    position:relative;
+}
+.SCHOOL ul li 
+{
+    list-style: none;
+    position: relative;
+    margin: 20px 0;
+    cursor: pointer;
+    text-align:center;
+}
+.SCHOOL ul li .icon{
+    display: inline-block;
+    width: 20px;
+    color: goldenrod;
+    text-align: center;
+
+}
+.SCHOOL ul li span
+{
+    color: goldenrod;
+    font-weight: 200;
+    text-align: center;
+     
+}
+.languages
+{
+    padding-top: 35px;
+}
+.languages ul
+{
+    position:relative;
+}
+.languages ul li 
+{
+    list-style: none;
+    position: relative;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.languages ul li .icon{
+    display: inline-block;
+    width: 20px;
+    color: goldenrod;
+
+}
+.languages ul li span
+{
+    color: goldenrod;
+    font-weight: 200;
+    text-align: center; 
+}
+.title
+{
+ color:goldenrod;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: 600 ;
+ letter-spacing: 1px;
+ margin-bottom: 10px;
+}
+
+.container .right_side
+{
+ position: relative;
+ background: #c9bfb5;
+ padding: 1px 1px 1px 50px;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #003147;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #daa520;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav  a:hover {
+    background-color:hsl(43, 40%, 49%);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active a:hover {
+    background-color:#003147;
+    color: #af934b;
+  }
+.sobremi
+{
+    margin-top: 20px ;
+    margin-bottom: 20px;
+}
+
+
+.sobremi:last-child
+{
+    margin-bottom: 0;
+    
+}
+.title2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.sobremi .box1 
+{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.sobremi .box1 .lengProgra p .fa
+{
+    color: #003147;
+    font-size: 10px;
+    width: 20px;   
+}
+
+.sobremi .box2 
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.sobremi .box2 .año h5
+{
+    min-width: 150px;
+}
+.intereses ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.intereses ul li
+{
+    list-style: none;
+    color: #003147;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.intereses ul li .fa
+{
+    color: #003147;
+    font-size: 10px;
+    width: 20px;
+}
+
+ @media(max-width: 1000px){
+
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .intereses ul 
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+ }
+ @media(max-width: 600px)
+ {
+    .sobremi .box1
+    {
+        flex-direction: column;
+    }
+    .sobremi .box1 .año
+    {
+        margin-bottom: 5px;
+    }
+ }
+
