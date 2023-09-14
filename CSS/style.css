@@ -77,6 +77,18 @@ body
 .contactO
 {
     padding-top: 35px;
+    display: flex;
+    justify-content: center;
+
+   
+}
+
+@media (min-width: 1000px) {
+    .contactO
+{
+    display: block;
+}
+
 }
 .contactO ul
 {
@@ -139,6 +151,8 @@ body
 .languages
 {
     padding-top: 35px;
+    text-align: center;
+
 }
 .languages ul
 {
