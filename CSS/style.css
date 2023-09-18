@@ -32,6 +32,11 @@ body
  background: #003147;
  padding: 17.35px;
 }
+
+h4,h5{
+    color:#003147;
+
+}
 .profileText
 {
     position: relative;
@@ -177,6 +182,10 @@ body
     font-weight: 200;
     text-align: center; 
 }
+
+.icon_lang{
+    color:#003147;
+}
 .title
 {
  color:goldenrod;
@@ -257,6 +266,47 @@ body
     display: flex;
     flex-direction: row;
     margin: 20px 0;
+}
+.portafolio{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+}
+@media (min-width: 768px) {
+    .portafolio{
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.portafolio img {
+    
+    width: 40rem;
+    object-fit: scale-down;
+    transition: transform 0.3s ease-out;
+  }
+
+  @media (min-width: 768px) {
+    .portafolio img{
+        width: 20rem;
+        padding-right: 1rem;
+    }
+}
+
+.chamba__text{
+    padding: 1rem;
+
+}
+.chamba__heading{
+    padding: 1rem;
+}
+
+
+.año{
+    color:#003147;
 }
 .sobremi .box2 .año h5
 {
