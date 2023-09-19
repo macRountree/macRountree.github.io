@@ -185,6 +185,7 @@ h4,h5{
 
 .icon_lang{
     color:#003147;
+    
 }
 .title
 {
@@ -202,13 +203,11 @@ h4,h5{
  background: #c9bfb5;
  padding: 1px 1px 1px 50px;
 }
-/* Add a black background color to the top navigation */
 .topnav {
     background-color: #003147;
     overflow: hidden;
   }
   
-  /* Style the links inside the navigation bar */
   .topnav a {
     float: right;
     color: #daa520;
@@ -284,24 +283,36 @@ h4,h5{
 
 .portafolio img {
     
-    width: 40rem;
+    width: 27rem;
     object-fit: scale-down;
     transition: transform 0.3s ease-out;
   }
 
   @media (min-width: 768px) {
     .portafolio img{
-        width: 20rem;
+        width: 18rem;
         padding-right: 1rem;
     }
 }
 
+.fas{
+    color: #003147;
+}
+
 .chamba__text{
     padding: 1rem;
+    text-align: justify;
 
 }
-.chamba__heading{
-    padding: 1rem;
+.chamba__img{
+    
+}
+
+.chamba__iconos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
 }
 
 
