@@ -14,6 +14,10 @@ body
     align-items: center;
     min-height: 100vh;
 }
+img {
+    max-width: 100%;
+    display: block;
+}
 .container
 {
     position: relative;
@@ -283,17 +287,15 @@ h4,h5{
 
 .portafolio img {
     
-    width: 27rem;
+   
     object-fit: scale-down;
     transition: transform 0.3s ease-out;
-  }
-
-  @media (min-width: 768px) {
-    .portafolio img{
-        width: 18rem;
-        padding-right: 1rem;
-    }
+    margin: 0 auto;
+    padding-right: .5rem;
 }
+
+ 
+
 
 .fas{
     color: #003147;
@@ -311,7 +313,7 @@ h4,h5{
 .chamba__iconos{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-right: 1rem;
 }
 
